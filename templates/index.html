@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocal Remover - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="../static/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar bg-dark text-light p-3" id="sidebar">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header d-flex justify-content-between align-items-center mb-4">
+                <h4>VocalRemover</h4>
+                <i class="ri-arrow-left-right-line" id="toggle-btn" style="cursor: pointer;"></i>
+            </div>
+
+            <!-- General Menu -->
+            <li class="menu-header"><span>GENERAL</span></li>
+            <ul class="list-unstyled sidebar-menu">
+                <li>
+                    <a href="index.html" class="d-flex align-items-center text-light">
+                        <i class="ri-home-line"></i>
+                        <span class="menu-text ms-2">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="audio-files.html" class="d-flex align-items-center text-light">
+                        <i class="ri-file-music-line"></i>
+                        <span class="menu-text ms-2">Audio Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="remove-vocals.html" class="d-flex align-items-center text-light">
+                        <i class="ri-mic-line"></i>
+                        <span class="menu-text ms-2">Remove Vocals</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Spacer to keep the distance between General and Extra when collapsed -->
+            <div class="extra-space"></div>
+
+            <!-- Extra Menu -->
+            <li class="menu-header mt-4"><span>EXTRA</span></li>
+            <ul class="list-unstyled sidebar-menu">
+                <li class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-light dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="ri-paint-brush-line"></i>
+                        <span class="menu-text ms-2">Theme</span>
+                    </a>
+                    <ul class="dropdown-menu bg-dark text-light">
+                        <li><a class="dropdown-item text-light" href="#">Dark</a></li>
+                        <li><a class="dropdown-item text-light" href="#">Light</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center text-light">
+                        <i class="ri-book-2-line"></i>
+                        <span class="menu-text ms-2">Documentation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center text-light">
+                        <i class="ri-lifebuoy-line"></i>
+                        <span class="menu-text ms-2">Support</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content p-4">
+            <h1>Welcome to VocalRemover</h1>
+            <p>This tool allows you to separate vocals from music using artificial intelligence. Upload your file to start the process.</p>
+
+            <div class="mt-4">
+                <a href="remove-vocals.html" class="btn btn-primary btn-lg">Start Removing Vocals</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/script.js"></script>
+</body>
+</html>
